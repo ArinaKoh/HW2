@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X19-Mx-1Pu">
-                                <rect key="frame" x="16" y="22" width="812" height="166"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X19-Mx-1Pu">
+                                <rect key="frame" x="17" y="64" width="360" height="359"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSs-kt-1cn">
-                                <rect key="frame" x="16" y="198" width="812" height="158"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSs-kt-1cn">
+                                <rect key="frame" x="18" y="449" width="358" height="361"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X19-Mx-1Pu" secondAttribute="trailing" constant="13" id="1oP-wm-ezu"/>
+                            <constraint firstItem="QSs-kt-1cn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Arf-hR-JtV"/>
+                            <constraint firstItem="X19-Mx-1Pu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="EzX-IY-Bf6"/>
+                            <constraint firstItem="QSs-kt-1cn" firstAttribute="top" secondItem="X19-Mx-1Pu" secondAttribute="bottom" constant="26" id="nga-GZ-xXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QSs-kt-1cn" secondAttribute="trailing" constant="14" id="x1m-s1-RTL"/>
+                            <constraint firstItem="X19-Mx-1Pu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="xJj-ei-q9y"/>
+                            <constraint firstItem="QSs-kt-1cn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="xxO-rW-znE"/>
+                            <constraint firstItem="X19-Mx-1Pu" firstAttribute="height" secondItem="QSs-kt-1cn" secondAttribute="height" multiplier="0.99446" id="zam-Tx-yj4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
